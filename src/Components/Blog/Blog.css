@@ -1,0 +1,9 @@
+.blogContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.blogContainer__title {
+    margin: 1em 0;
+    font-weight: 300;
+}
