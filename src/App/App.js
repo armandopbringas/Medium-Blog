@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../Components/Nav/Nav'
-import Blog from '../Components/Blog/Blog'
+import Blog from '../Components/Blog/BlogContainer'
 
 const App = () => {
   return (

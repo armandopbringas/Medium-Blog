@@ -1,21 +1,18 @@
 import React from 'react'
 
-const Post = () => {
+const Post = ({posts}) => {
+
+    const { items } = posts
 
     return(
         <li>
             <a 
+                href={items.link}
                 className='repo__link' 
                 target='_blank' rel='noopener noreferrer'
             >
-                Super
+                {items.link}
             </a>
-            <p>
-                Pui
-            </p>
-            <p>
-                Updated
-            </p>
         </li>
     )
 }
