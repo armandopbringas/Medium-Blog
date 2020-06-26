@@ -13,7 +13,7 @@ const BlogContainer = () => {
         }
 
         const getPosts = async () => {
-            const url = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40uriel_hedz`
+            const url = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40lmolinavillavicencio`
             const resp = await fetch(url)
             const result = await resp.json()
             sessionStorage.setItem('posts', JSON.stringify(result.items))
