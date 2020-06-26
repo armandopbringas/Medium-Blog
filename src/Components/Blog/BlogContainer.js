@@ -31,12 +31,8 @@ const BlogContainer = () => {
             <ul>
                 {
                     posts.map(posts => {
-                        return <li>
-                                <span 
-                                    className='blog-title'
-                                >
-                                    {posts.title}
-                                </span>
+                        return <li className='blog-title'>
+                                {posts.title}
                             </li>
                     })
                 }
