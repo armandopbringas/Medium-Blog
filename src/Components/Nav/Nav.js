@@ -8,9 +8,11 @@ const Nav = () => {
                 <h1>Blog</h1>
             </div>
             <div className='nav__contact'>
-                <p className='nav__contact--data'>
-                  Contact
-                </p>
+                <button
+                  type='button'
+                  className='nav__contact--data'>
+                  Toggle Menu
+                </button>
             </div>
         </nav>
     )

@@ -1,9 +1,15 @@
 .blogContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .blogContainer__title {
-    margin: 1em 0;
+    margin: 3em 0;
     font-weight: 300;
+}
+
+.blog-title {
+    margin: 0.5em 0;
 }

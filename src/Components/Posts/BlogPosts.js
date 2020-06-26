@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Posts = (props) => {
+const Posts = () => {
+
     return(
         <div className='postsContainer'>
             <li>
-                <a>{props.post.title}</a>
+                <p>no jala</p>
             </li>
         </div>
     )
