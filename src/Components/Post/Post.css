@@ -1,0 +1,8 @@
+.blog-title {
+    margin: 1.5em 0;
+    flex-direction: column;
+}
+
+a {
+    margin: 0.5em 0;
+}

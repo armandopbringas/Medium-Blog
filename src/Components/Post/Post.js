@@ -1,18 +1,19 @@
 import React from 'react'
+import './Post.css'
 
 const Post = ({posts}) => {
 
-    const { items } = posts
-
     return(
-        <li>
+        <li className='blog-title'>
+            <h1>{posts.title}</h1>
             <a 
-                href={items.link}
-                className='repo__link' 
-                target='_blank' rel='noopener noreferrer'
+                href={posts.link}
+                target='_blank' 
+                rel='noopener noreferrer'
             >
-                {items.link}
+                Leer
             </a>
+            <p>{posts.author}</p>
         </li>
     )
 }

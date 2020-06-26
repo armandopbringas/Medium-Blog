@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Post from '../Post/Post'
 import './BlogContainer.css'
 
 const BlogContainer = () => {
@@ -31,9 +32,7 @@ const BlogContainer = () => {
             <ul>
                 {
                     posts.map(posts => {
-                        return <li className='blog-title'>
-                                {posts.title}
-                            </li>
+                        return <Post posts={posts} />
                     })
                 }
             </ul>
