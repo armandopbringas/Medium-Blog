@@ -4,17 +4,24 @@ import './Post.css'
 const Post = ({posts}) => {
 
     return(
-        <li className='blog-title'>
-            <h1>{posts.title}</h1>
-            <a 
-                href={posts.link}
-                target='_blank' 
-                rel='noopener noreferrer'
-            >
-                Leer
-            </a>
-            <p>{posts.author}</p>
-        </li>
+        <div className='blogCard'>
+            <img 
+                style={ { width: '100%' } }
+                src={posts.thumbnail}
+                className='blogImg' 
+            />
+            <div className='infoContainer'>
+                <h1>{posts.title}</h1>
+                <a 
+                    href={posts.link}
+                    target='_blank' 
+                    rel='noopener noreferrer'
+                >
+                    Leer
+                </a>
+                <p>{posts.author}</p>
+            </div>
+        </div>
     )
 }
 

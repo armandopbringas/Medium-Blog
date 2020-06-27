@@ -29,13 +29,13 @@ const BlogContainer = () => {
     return(
         <div className='blogContainer'>
             <h1 className='blogContainer__title'>Posts</h1>
-            <ul>
+            <div>
                 {
                     posts.map(posts => {
                         return <Post posts={posts} />
                     })
                 }
-            </ul>
+            </div>
         </div>
     )
 }
