@@ -11,7 +11,7 @@ const Nav = () => {
                 <button
                   type='button'
                   className='nav__contact--data'>
-                  Suscribe
+                  Show Menu
                 </button>
             </div>
         </nav>

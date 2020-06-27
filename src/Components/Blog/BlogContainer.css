@@ -1,12 +1,24 @@
+.container {
+    text-align: center;
+}
+
 .blogContainer {
     display: flex;
     padding: 0 5em;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .blogContainer__title {
     margin: 2em 0;
     font-weight: 300;
+}
+
+.suscribeButton {
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 800px) {
+    .blogContainer {
+        flex-direction: column;
+        align-items: center;
+    }
 }

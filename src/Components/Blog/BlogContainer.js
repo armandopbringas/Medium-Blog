@@ -27,15 +27,21 @@ const BlogContainer = () => {
     }, [])
 
     return(
-        <div className='blogContainer'>
+        <div className='container'>
             <h1 className='blogContainer__title'>Posts</h1>
-            <div>
+            <div className='blogContainer'>
                 {
                     posts.map(posts => {
                         return <Post posts={posts} />
                     })
                 }
             </div>
+            <button
+                type='button'
+                className='suscribeButton'
+            >
+                Suscribe
+            </button>
         </div>
     )
 }
