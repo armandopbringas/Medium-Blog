@@ -1,12 +1,11 @@
 .blogCard {
-  width: 25%;
-  height: 100%;
-  margin: 1.5em;
-  text-align: start;
+  width: 100%;
+  margin: 1em;
+  text-align: left;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  padding: 1em 1em 0;
+  padding: 0 1em;
 }
 
 .blogCard:hover {
@@ -14,7 +13,7 @@
 }
 
 .infoContainer {
-  padding: 1em 0;
+  margin: 1em 0;
 }
 
 h1 {
@@ -28,8 +27,3 @@ p, a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 800px) {
-  .blogCard {
-      width: 100%;
-  }
-}
