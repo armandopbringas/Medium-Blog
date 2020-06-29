@@ -6,7 +6,7 @@ const Post = ({posts}) => {
     return(
         <div className='blogCard'>
             <img 
-                style={ { width: '100%', height: '50%' } }
+                style={ { width: '100%', height: '50%', borderRadius: '2.5px'} }
                 src={posts.thumbnail}
                 className='blogImg' 
             />

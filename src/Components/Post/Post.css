@@ -5,7 +5,7 @@
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  padding: 0 1em;
+  padding: 1em;
 }
 
 .blogCard:hover {
@@ -14,11 +14,6 @@
 
 .infoContainer {
   margin: 1em 0;
-}
-
-h1 {
-  font-size: 14px;
-  margin: 0.25em 0;
 }
 
 p, a {

@@ -18,8 +18,9 @@ h1 {
     margin-right: 2.5em;
 }
 
-.nav__contact--data, li {
+.nav__toggle--button {
     display: flex;
     margin: 0 1em;
+    padding: 0.5em 1em;
     font-weight: 200;
 }
