@@ -7,7 +7,6 @@ const BlogContainer = () => {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-
         const data = sessionStorage.getItem('posts')
         if(data) {
             setPosts(JSON.parse(data))
