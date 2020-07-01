@@ -2,6 +2,7 @@ import React from 'react'
 import '../Menu/Menu.css'
 
 const Menu = () => {
+
     return(
     <div className='toggleMenu'>
         <ul>

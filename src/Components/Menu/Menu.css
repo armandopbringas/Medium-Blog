@@ -1,16 +1,14 @@
 .toggleMenu {
-    height: 100vh;
+    top: 0;
     width: 50vw;
+    display: flex;
+    opacity: 0.85;
+    z-index: 1000;
+    height: 100vh;
     position: fixed;
     align-items: center;
     justify-content: center;
-    display: flex;
-    top: 0;
-    left: 0;
-    transition: transform 0.7s cubic-bezier(0, .52, 0, 1);
-    z-index: 1000;
     background-color: lightgrey;
-    opacity: 0.85;
 }
 
 @media screen and (min-width: 900px) {

@@ -7,13 +7,6 @@ const Nav = () => {
     // Hook for the toggle menu event.
     const [showMenu, setShowMenu] = useState(false)
 
-    let menu
-
-    // Conditional for show the menu
-    if(showMenu) {
-        menu = <Menu />
-    }
-
     return(
         <nav className='nav'>
             <div className='nav__name'>
@@ -23,12 +16,13 @@ const Nav = () => {
                 <button
                   type='button'
                   className='nav__toggle--button'
+                  showMenu={showMenu}
                   onClick={() => setShowMenu(!showMenu)}
                 >
                   Contact
                 </button>
             </div>
-            { menu }
+            {showMenu ? <Menu open /> : <Menu />}
         </nav>
     )
 }
