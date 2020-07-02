@@ -1,15 +1,25 @@
-.toggleMenu {
-    top: 0;
-    left: 0;
-    width: 50vw;
+#toggleMenu {
+    bottom: 0;
+    right: 0;
+    width: 40vw;
+    height: 90vh;
     display: flex;
-    opacity: 0.85;
     z-index: 1000;
-    height: 100vh;
+    border-radius: 5px;
     position: fixed;
     align-items: center;
     justify-content: center;
     background-color: lightgrey;
+    transition: transform 0.7s cubic-bezier(0, .52, 0, 1);
+}
+
+#toggleMenu.hide {
+    transform: translate3d(50vw, 0, 0);
+}
+  
+#toggleMenu.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
 }
 
 @media screen and (min-width: 900px) {

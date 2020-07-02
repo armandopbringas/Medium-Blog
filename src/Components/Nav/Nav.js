@@ -4,17 +4,10 @@ import './Nav.css'
 
 const Nav = () => {
 
-    // Hook for the toggle menu event.
-    const [showMenu, setShowMenu] = useState(false)
+    const [open, setOpen] = useState(false)
 
-    let menu
-
-    if(showMenu) {
-        menu = <Menu />
-    }
-
-    const showToggle = () => {
-        setShowMenu(!showMenu)
+    const clickToggle = () => {
+        setOpen(!open)
     }
 
     return(
@@ -26,11 +19,11 @@ const Nav = () => {
                 <button
                   type='button'
                   className='nav__toggle--button'
-                  onClick={showToggle}
+                  onClick={clickToggle}
                 >
                   Contact
                 </button>
-                {menu}
+                <Menu open={open} />
             </div>
         </nav>
     )

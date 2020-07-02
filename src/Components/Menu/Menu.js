@@ -1,10 +1,19 @@
 import React from 'react'
 import '../Menu/Menu.css'
 
-const Menu = () => {
+const Menu = ({open}) => {
+
+    let visibility = 'hide';
+
+    if (open) {
+      visibility = 'show';
+    }
 
     return(
-    <div className='toggleMenu'>
+    <div
+        id='toggleMenu'
+        className={visibility}
+    >
         <ul>
             <li>
                 <p>Email</p>
