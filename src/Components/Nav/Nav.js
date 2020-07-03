@@ -1,14 +1,7 @@
-import React, {useState} from 'react'
-import Menu from '../Menu/Menu'
+import React from 'react'
 import './Nav.css'
 
 const Nav = () => {
-
-    const [open, setOpen] = useState(false)
-
-    const clickToggle = () => {
-        setOpen(!open)
-    }
 
     return(
         <nav className='nav'>
@@ -19,11 +12,9 @@ const Nav = () => {
                 <button
                   type='button'
                   className='nav__toggle--button'
-                  onClick={clickToggle}
                 >
-                  Contact
+                  Suscribe
                 </button>
-                <Menu open={open} />
             </div>
         </nav>
     )

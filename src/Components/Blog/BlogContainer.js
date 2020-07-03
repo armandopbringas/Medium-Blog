@@ -7,6 +7,7 @@ const BlogContainer = () => {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
+
         const data = sessionStorage.getItem('posts')
         if(data) {
             setPosts(JSON.parse(data))
@@ -17,8 +18,8 @@ const BlogContainer = () => {
             const resp = await fetch(url)
             const result = await resp.json()
             sessionStorage.setItem('posts', JSON.stringify(result.items))
-            // console.log(resp)
             setPosts(result.items)
+            // console.log(resp)
         }
 
         getPosts()
@@ -35,12 +36,6 @@ const BlogContainer = () => {
                     })
                 }
             </div>
-            <button
-                type='button'
-                className='suscribeButton'
-            >
-                Suscribe
-            </button>
         </div>
     )
 }
