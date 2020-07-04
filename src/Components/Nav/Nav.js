@@ -1,7 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
+import Modal from '../Modal/Modal'
 import './Nav.css'
 
 const Nav = () => {
+
+    const [show, setShow] = useState(false)
+
+    const showModal = () => {
+        setShow(true)
+    } 
 
     return(
         <nav className='nav'>
@@ -12,9 +19,13 @@ const Nav = () => {
                 <button
                   type='button'
                   className='nav__toggle--button'
+                  onClick={showModal}
                 >
                   Suscribe
                 </button>
+                <Modal show={show} setShow={setShow}>
+                    Aquí va un formulario
+                </Modal>
             </div>
         </nav>
     )
