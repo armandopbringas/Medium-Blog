@@ -13,7 +13,7 @@ const Nav = () => {
     return(
         <nav className='nav'>
             <div className='nav__name'>
-                <h1>Blog</h1>
+                <h1 className='navTitle'>Blog</h1>
             </div>
             <div className='nav__contact'>
                 <button
@@ -23,8 +23,11 @@ const Nav = () => {
                 >
                   Suscribe
                 </button>
-                <Modal show={show} setShow={setShow}>
-                    Aquí va un formulario
+                <Modal 
+                    show={show} 
+                    setShow={setShow}
+                >
+                    Suscribe
                 </Modal>
             </div>
         </nav>
