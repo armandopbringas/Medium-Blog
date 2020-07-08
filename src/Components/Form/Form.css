@@ -1,7 +1,17 @@
-.inputForm1, .inputForm2 {
-    width: 100%;
+.formBody {
+  width: 100%;
+}
+
+.inputForm1, 
+.inputForm2 {
+    width: 95%;
   }
 
-  .inputForm2 {
-    margin: 0 1em 1em 0;
-  }
+.inputForm2 {
+  margin: 0 0 1em 0;
+}
+
+.alertForm {
+  margin-left: 0.5em;
+  color: orangered;
+}
