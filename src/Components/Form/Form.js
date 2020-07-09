@@ -63,7 +63,7 @@ const Form = () => {
                 <span
                   className='alertForm'
                 >
-                  Todos los campos son obligatorios
+		  All the fields are required *
                 </span> 
               : null}
         </form>
